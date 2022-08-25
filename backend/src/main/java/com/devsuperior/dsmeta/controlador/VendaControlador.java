@@ -1,10 +1,11 @@
 package com.devsuperior.dsmeta.controlador;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dsmeta.entidades.Venda;
@@ -19,8 +20,11 @@ public class VendaControlador {
 	private VendaServico servico;
 	
 	@GetMapping
-	public List<Venda> buscarVendas() {
-		return servico.buscarVendas();
+	public Page<Venda> buscarVendas(
+			@RequestParam(value = "minData", defaultValue = "") String minData, 
+			@RequestParam(value = "maxData", defaultValue = "")String maxData, 
+			Pageable pageable) {
+		return servico.buscarVendas(minData, maxData, pageable);
 		
 	}
 
