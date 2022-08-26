@@ -3,6 +3,8 @@ import { toast } from 'react-toastify';
 import { BASE_URL } from '../../utils/request';
 import './styles.css'
 
+import icon from '../../assets/img/notification-icon.svg'
+
 type Props = {
   vendaId: number;
 
@@ -15,11 +17,12 @@ function handleClick(id : number) {
   })
 }
 
+
 function NotificationButton({vendaId} : Props) {
     return(
         <>
       <div className= "dsmeta-red-btn" onClick={() => handleClick(vendaId)}>
-          <img src="src\assets\img\notification-icon.svg" alt="Notificar" />
+          <img src={icon} alt="Notificar" />
       </div>
       </>
     )
