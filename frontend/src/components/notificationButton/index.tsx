@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import icon from '../../assets/img/notification-icon.svg'
 import { BASE_URL } from '../../utils/request';
-
 import './styles.css'
 
 type Props = {
@@ -21,7 +19,7 @@ function NotificationButton({vendaId} : Props) {
     return(
         <>
       <div className= "dsmeta-red-btn" onClick={() => handleClick(vendaId)}>
-          <img src={icon} alt="Notificar" />
+          <img src="src\assets\img\notification-icon.svg" alt="Notificar" />
       </div>
       </>
     )
