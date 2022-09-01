@@ -1,4 +1,5 @@
-import logo from '../../assets/img/logo.svg'
+import React from 'react'
+import logo from '../../assets/logo.svg'
 import './styles.css'
 
 function Header() {

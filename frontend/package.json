@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "0.27.2",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
-    "react-toastify": "9.0.5"
+    "react-toastify": "^9.0.8"
   },
   "devDependencies": {
-    "@types/node": "^18.7.13",
+    "@types/node": "^18.7.14",
     "@types/react": "^18.0.17",
     "@types/react-datepicker": "^4.4.2",
     "@types/react-dom": "^18.0.6",

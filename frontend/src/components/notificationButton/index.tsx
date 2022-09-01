@@ -2,8 +2,9 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { BASE_URL } from '../../utils/request';
 import './styles.css'
+import icon from '../../assets/notification-icon.svg'
 
-import icon from '../../assets/img/notification-icon.svg'
+
 
 type Props = {
   vendaId: number;
