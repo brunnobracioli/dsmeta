@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { BASE_URL } from '../../utils/request';
 import './styles.css'
-import icon from '../../assets/notification-icon.svg'
+import { ImageNotification } from '../ImageNotification'
 
 
 
@@ -23,7 +23,7 @@ function NotificationButton({vendaId} : Props) {
     return(
         <>
       <div className= "dsmeta-red-btn" onClick={() => handleClick(vendaId)}>
-          <img src={icon} alt="Notificar" />
+          <ImageNotification/>
       </div>
       </>
     )

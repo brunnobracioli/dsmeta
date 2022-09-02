@@ -1,12 +1,13 @@
 import React from 'react'
-import logo from '../../assets/logo.svg'
 import './styles.css'
+
+import { LogoImage  } from '../logoImage'
 
 function Header() {
     return (
         <header>
             <div className="dsmeta-logo-container">
-                <img src = {logo} alt= "" />
+                <LogoImage/>
                 <h1>DSMeta</h1>
 
             </div>
